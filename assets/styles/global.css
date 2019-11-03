@@ -6,6 +6,7 @@ body {
 
 a {
   color: #000;
+  text-decoration: none;
 }
 
 header {
@@ -33,4 +34,9 @@ main {
   display: inline;
   vertical-align: middle;
   margin-right: 12px;
+}
+
+a:hover,
+.navitem--active {
+  color: #74c9d6;
 }
