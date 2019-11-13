@@ -4,6 +4,11 @@ body {
   margin: 8px 0 0 0;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 header {
   z-index: 5;
   border-bottom: 1px solid lightgray;
@@ -29,4 +34,9 @@ main {
   display: inline;
   vertical-align: middle;
   margin-right: 12px;
+}
+
+a:hover,
+.navitem--active {
+  color: #74c9d6;
 }
