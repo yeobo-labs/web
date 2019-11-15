@@ -1,0 +1,26 @@
+.extensionSection {
+  margin: 12px 24px;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.extensionLogo {
+  width: 96px;
+}
+
+.extensionName {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.extensionDetails {
+  margin-left: 14px;
+}
+
+.extensionCategory {
+  color: #737373;
+  font-size: 12px;
+}
