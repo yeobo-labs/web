@@ -22,9 +22,9 @@ const NavigationHeader = ({ children }: NavigationHeaderProps) => {
                         <li className="navitem">
                             <NavLink to="/portfolio" activeClassName="navitem--active">Portfolio</NavLink>
                         </li>
-                        <li className="navitem">
+                        {/* <li className="navitem">
                             <NavLink to="/blog" activeClassName="navitem--active">Blog</NavLink>
-                        </li>
+                        </li> */}
                         <li className="navitem">
                             <NavLink to="/about" activeClassName="navitem--active">About</NavLink>
                         </li>
