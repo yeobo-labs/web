@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import productivityImage from './images/productivity.png';
 import gamesImage from './images/games.png';
 import './portfolio.css';
@@ -13,7 +14,7 @@ const Portfolio = () => (
         <h1 className="portfolio__contentText__heading">Productivity</h1>
         <div className="portfolio__contentText__content">
           <p>Tools that can boost your productivity, no matter what you do.</p>
-          {/* <a href="#" className="portfolio__contentText__content--seeAll">See all</a> */}
+          <Link to="/portfolio/productivity" className="portfolio__contentText__content--seeAll">See all</Link>
         </div>
       </div>
     </div>

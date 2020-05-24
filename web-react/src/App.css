@@ -14,3 +14,7 @@ main {
   min-height: 100%;
   position: relative;
 }
+
+h1 {
+  color: #1F3541;
+}

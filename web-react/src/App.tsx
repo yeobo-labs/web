@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import NavigationHeader from './components/navigation-header';
 import Portfolio from './pages/portfolio';
+import PortfolioProductivity from './pages/portfolio/productivity';
 import './App.css';
 
 const MockComponent = () => {
@@ -18,11 +19,12 @@ function App() {
     <div className="App">
       <NavigationHeader>
         <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/portfolio/productivity" component={PortfolioProductivity} />
         <Route exact path="/blog" component={MockComponent} />
         <Route exact path="/about" component={MockComponent} />
         <Route exact path="/" component={MockComponent} />
       </NavigationHeader>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
