@@ -14,13 +14,13 @@ header {
   border-bottom: 1px solid lightgray;
   padding: 0 40px 8px;
   display: flex;
-  width: 100%;
   align-items: center;
 }
 
 main {
-  margin: 24px 48px;
+  margin: 24px auto;
   font-size: 14px;
+  max-width: 1200px;
 }
 
 .logo {
@@ -41,5 +41,5 @@ main {
 
 a:hover,
 .navitem--active {
-  color: #74c9d6;
+  color: #5289B5;
 }
