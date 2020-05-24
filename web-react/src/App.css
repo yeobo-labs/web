@@ -3,6 +3,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #5289B5;
+}
+
 main {
   margin: 24px auto;
   font-size: 14px;
