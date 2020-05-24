@@ -1,0 +1,20 @@
+.breadcrumbs {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.breadcrumbItem {
+    display: inline;
+    margin-right: 12px;
+}
+
+.breadcrumbItem--active {
+    color: #5289B5;
+}
+
+.breadcrumbItem:not(:last-child)::after {
+    content: '>';
+    margin-left: 12px;
+}
