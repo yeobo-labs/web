@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import NavigationHeader from './components/navigation-header';
 import Portfolio from './pages/portfolio';
 import PortfolioProductivity from './pages/portfolio/productivity';
+import PortfolioGames from './pages/portfolio/games';
 import './App.css';
 
 const MockComponent = () => {
@@ -20,6 +21,7 @@ function App() {
       <NavigationHeader>
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/portfolio/productivity" component={PortfolioProductivity} />
+        <Route exact path="/portfolio/fun-games" component={PortfolioGames} />
         <Route exact path="/blog" component={MockComponent} />
         <Route exact path="/about" component={MockComponent} />
         <Route exact path="/" component={MockComponent} />

@@ -20,10 +20,10 @@ const Portfolio = () => (
     </div>
     <div className="portfolio__row">
       <div className="portfolio__contentText__container--left">
-        <h1 className="portfolio__contentText__heading">Fun & Games</h1>
+        <h1 className="portfolio__contentText__heading">Fun &amp; Games</h1>
         <div className="portfolio__contentText__content">
           <p>Fight boredom with some fun games to play with your friends.</p>
-          {/* <a href="#" className="portfolio__contentText__content--seeAll">See all</a> */}
+          <Link to="/portfolio/fun-games" className="portfolio__contentText__content--seeAll">See all</Link>
         </div>
       </div>
       <figure className="portfolio__contentImage__container">
