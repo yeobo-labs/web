@@ -29,7 +29,7 @@ const PortfolioGames = () => {
                     </div>
                     <div className="games__contentText__container">
                         <h3>Project Werewolf</h3>
-                        <span className="games__contentText__category">Multiplayer Game</span>
+                        <span className="games__contentText__category">Multiplayer Web Game</span>
                         <p>Werewolf is a game of deception and deduction you can play with all your friends! Goal is pretty simple - if you're on the good side, find out who the werewolves are while if you're on the bad side, eliminate as much good people as you could without leaving a clue.</p>
                     </div>
                 </a>
