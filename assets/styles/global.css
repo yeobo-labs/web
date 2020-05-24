@@ -12,8 +12,10 @@ a {
 header {
   z-index: 5;
   border-bottom: 1px solid lightgray;
-  padding-left: 40px;
-  padding-bottom: 8px;
+  padding: 0 40px 8px;
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
 main {
@@ -23,18 +25,18 @@ main {
 
 .logo {
   width: 56px;
+  transform: scale(1.5);
 }
 
 .navbar {
   list-style: none;
-  margin: 0;
+  margin-left: 12px;
   padding: 0;
 }
 
 .navitem {
   display: inline;
-  vertical-align: middle;
-  margin-right: 12px;
+  margin-left: 12px;
 }
 
 a:hover,
