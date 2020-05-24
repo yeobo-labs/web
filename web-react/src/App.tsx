@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import Footer from './components/footer';
 import NavigationHeader from './components/navigation-header';
 import Portfolio from './pages/portfolio';
 import './App.css';
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/about" component={MockComponent} />
         <Route exact path="/" component={MockComponent} />
       </NavigationHeader>
+      <Footer />
     </div>
   );
 }
