@@ -6,12 +6,12 @@ h3 {
     margin-bottom: 4px;
 }
 
-a:hover {
+.productivity__row:hover {
     color: black !important;
 }
 
-a:hover h3 {
-    color: #5289B5 !important;
+.productivity__row:hover h3 {
+    color: #5289B5;
 }
 
 .productivity__container {
