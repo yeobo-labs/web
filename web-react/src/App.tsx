@@ -5,15 +5,21 @@ import Portfolio from './pages/portfolio';
 import './App.css';
 
 const MockComponent = () => {
-  return <h2>Hello world!</h2>;
+  return (
+    <main>
+      <h4>Hey! We're still working on making this site gorgeous. Stay tuned!</h4>
+    </main>
+  );
 }
 
 function App() {
   return (
     <div className="App">
       <NavigationHeader>
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="*" component={MockComponent} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/blog" component={MockComponent} />
+        <Route exact path="/about" component={MockComponent} />
+        <Route exact path="/" component={MockComponent} />
       </NavigationHeader>
     </div>
   );
