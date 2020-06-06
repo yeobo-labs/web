@@ -20,14 +20,20 @@ const NavigationHeader = ({ children }: NavigationHeaderProps) => {
                     </NavLink>
                     <ul className="navbar">
                         <li className="navitem">
-                            <NavLink to="/portfolio" activeClassName="navitem--active">Portfolio</NavLink>
+                            <NavLink to="/productivity" activeClassName="navitem--active">Productivity</NavLink>
                         </li>
+                        <li className="navitem">
+                            <NavLink to="/fun-games" activeClassName="navitem--active">Fun &amp; Games</NavLink>
+                        </li>
+                        {/* <li className="navitem">
+                            <NavLink to="/portfolio" activeClassName="navitem--active">Portfolio</NavLink>
+                        </li> */}
                         {/* <li className="navitem">
                             <NavLink to="/blog" activeClassName="navitem--active">Blog</NavLink>
                         </li> */}
-                        <li className="navitem">
+                        {/* <li className="navitem">
                             <NavLink to="/about" activeClassName="navitem--active">About</NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </header>
 

@@ -25,7 +25,9 @@ function App() {
         <Route exact path="/portfolio/fun-games" component={PortfolioGames} />
         <Route exact path="/blog" component={MockComponent} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/" component={MockComponent} />
+        <Route exact path="/productivity" component={PortfolioProductivity} />
+        <Route exact path="/fun-games" component={PortfolioGames} />
+        <Route exact path="/" component={About} />
       </NavigationHeader>
       {/* <Footer /> */}
     </div>
