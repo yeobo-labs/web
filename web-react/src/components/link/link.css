@@ -1,0 +1,34 @@
+.portfolioLink__row:hover {
+    color: black !important;
+}
+
+.portfolioLink__row:hover h3 {
+    color: #5289B5;
+}
+
+.portfolioLink__container {
+    margin: 48px 0;
+}
+
+.portfolioLink__row {
+    display: flex;
+    align-items: flex-start;
+    pointer: cursor;
+}
+
+.portfolioLink__contentImage__container {
+    width: 200px;
+    text-align: center;
+}
+
+.portfolioLink__contentImage__image {
+    transform: scale(1.25);
+}
+
+.portfolioLink__contentText__container {
+    margin-left: 32px;
+}
+
+.portfolioLink__contentText__category {
+    color: grey;
+}
