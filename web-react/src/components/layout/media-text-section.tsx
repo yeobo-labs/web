@@ -16,7 +16,7 @@ type MediaTextSectionProps = MediaTextSectionMediaProps & {
 
 const renderMedia = ({video, image}: MediaTextSectionMediaProps) => (
     <figure className="mediaTextSection__contentImage__container">
-        {video ? <video {...video} /> : (image ? <img {...image} alt={image.alt || ''} className="mediaTextSection__contentImage__image" /> : <React.Fragment />)}
+        {video ? <video {...video} /> : (image ? <img {...image} alt={image.alt || ''} className="mediaTextSection__contentImage__image" /> : <div />)}
     </figure>
 );
 
