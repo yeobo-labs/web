@@ -14,7 +14,7 @@ const PortfolioLink = (props: PortfolioLinkProps) => (
     <div className="portfolioLink__container">
         <a href={props.href} target="_blank" rel="noopener noreferrer" className="portfolioLink__row">
             <div className="portfolioLink__contentImage__container">
-                <img {...props.image} className="portfolioLink__contentImage__image" />
+                <img {...props.image} alt={props.image.alt || ''} className="portfolioLink__contentImage__image" />
             </div>
             <div className="portfolioLink__contentText__container">
                 <h3>{props.heading}</h3>

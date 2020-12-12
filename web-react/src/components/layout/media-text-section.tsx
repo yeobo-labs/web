@@ -9,19 +9,27 @@ type MediaTextSectionProps = {
     imageSide: 'left' | 'right';
 }
 
-const MediaTextSection = ({ imageSide = 'left', ...props}: MediaTextSectionProps) => {
-    const mediaContent = (<figure className="mediaTextSection__contentImage__container">
-        <img {...props.image} className="mediaTextSection__contentImage__image" />
-    </figure>);
-    const textContent = (<div className={`mediaTextSection__contentText__container--${imageSide}`}>
+const renderImage = (image: ImageProps) => (
+    <figure className="mediaTextSection__contentImage__container">
+        <img {...image} alt={image.alt || ''} className="mediaTextSection__contentImage__image" />
+    </figure>
+);
+
+const renderContent = (props: Omit<MediaTextSectionProps, 'image'>) => (
+    <div className={`mediaTextSection__contentText__container--${props.imageSide}`}>
         <h1 className="mediaTextSection__contentText__heading">{props.heading}</h1>
         <div className="mediaTextSection__contentText__content">
             {props.children}
         </div>
-    </div>);
+    </div>
+);
 
-    const first = imageSide === 'left' ? mediaContent : textContent;
-    const second = imageSide === 'left' ? textContent : mediaContent;
+const MediaTextSection = (props: MediaTextSectionProps) => {
+    const mediaContent = renderImage(props.image);
+    const textContent = renderContent(props);
+
+    const first = props.imageSide === 'left' ? mediaContent : textContent;
+    const second = props.imageSide === 'left' ? textContent : mediaContent;
 
     return (<div className="mediaTextSection__row">
         {first}
