@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumbs from '../../components/breadcrumbs';
-import PortfolioLink from '../../components/link/portfolio_link';
+import PortfolioLink from '../../components/link/portfolio-link';
 import pomodoroLogo from './images/logo-pomodoro.png';
 
 const breadcrumbItems = [
