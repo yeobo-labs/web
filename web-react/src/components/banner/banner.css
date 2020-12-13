@@ -1,0 +1,29 @@
+.bannerContainer {
+    position: relative;
+}
+
+.bannerFigure {
+    margin: 8px 0;
+    max-height: 400px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerFigure img {
+    width: 100%;
+    position: relative;
+    transform: translateY(-40%);
+}
+
+.bannerOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: grey;
+    opacity: 0.45;
+    border-radius: 4px;
+}
