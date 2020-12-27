@@ -17,7 +17,9 @@ type MediaTextSectionProps = MediaTextSectionMediaProps & {
 
 const renderMedia = ({video, image}: MediaTextSectionMediaProps) => (
     <figure className="mediaTextSection__contentImage__container">
-        {video ? <video {...video} /> : (image ? <img {...image} alt={image.alt || ''} className="mediaTextSection__contentImage__image" /> : <div />)}
+        {video
+            ? <video {...video} />
+            : <img {...image} alt={image!.alt || ''} className="mediaTextSection__contentImage__image" />}
     </figure>
 );
 
@@ -31,11 +33,15 @@ const renderContent = (props: Omit<MediaTextSectionProps, 'image' | 'video'>) =>
 );
 
 const MediaTextSection = (props: MediaTextSectionProps) => {
-    const mediaContent = renderMedia(props);
-    const textContent = renderContent(props);
-
     const { width } = useWindowSize();
     const mediaSide = width && width <= 1240 ? 'left' : props.mediaSide;
+
+    if (!props.video && !props.image) {
+        return <React.Fragment />;
+    }
+
+    const mediaContent = renderMedia(props);
+    const textContent = renderContent(props);
 
     const first = mediaSide === 'left' ? mediaContent : textContent;
     const second = mediaSide === 'left' ? textContent : mediaContent;
