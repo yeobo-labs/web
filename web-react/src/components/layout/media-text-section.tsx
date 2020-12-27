@@ -1,4 +1,5 @@
 import React from 'react';
+import { useWindowSize } from '../../hooks/useWindowSize';
 import { ImageProps } from '../../types/image';
 import { VideoProps } from '../../types/video';
 import './layout.css';
@@ -33,8 +34,11 @@ const MediaTextSection = (props: MediaTextSectionProps) => {
     const mediaContent = renderMedia(props);
     const textContent = renderContent(props);
 
-    const first = props.mediaSide === 'left' ? mediaContent : textContent;
-    const second = props.mediaSide === 'left' ? textContent : mediaContent;
+    const { width } = useWindowSize();
+    const mediaSide = width && width <= 1240 ? 'left' : props.mediaSide;
+
+    const first = mediaSide === 'left' ? mediaContent : textContent;
+    const second = mediaSide === 'left' ? textContent : mediaContent;
 
     return (<div className="mediaTextSection__row">
         {first}
