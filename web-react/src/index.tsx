@@ -4,11 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.hydrate(
+const root = document.getElementById("root")
+const renderMethod = root && root.innerHTML !== "" ?  ReactDOM.hydrate : ReactDOM.render
+
+renderMethod(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  root
 );
 
 // If you want your app to work offline and load faster, you can change
