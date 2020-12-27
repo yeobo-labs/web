@@ -2,6 +2,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
+    min-height: 500px
 }
 
 .mediaTextSection__contentImage__container {
