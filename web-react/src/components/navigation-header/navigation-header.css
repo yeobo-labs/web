@@ -1,28 +1,30 @@
 header {
-    z-index: 5;
-    border-bottom: 1px solid lightgray;
-    padding: 0 40px 8px;
-    display: flex;
-    align-items: center;
-  }
+  z-index: 5;
+  border-bottom: 1px solid lightgray;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
 
-  .logo {
-    width: 56px;
-    transform: scale(1.5);
-  }
-  
-  .navbar {
-    list-style: none;
-    margin-left: 12px;
-    padding: 0;
-  }
-  
-  .navitem {
-    display: inline;
-    margin-left: 14px;
-  }
-  
-  a:hover,
-  .navitem--active {
-    color: #5289B5;
-  }
+.logo {
+  width: 56px;
+  transform: scale(1.5);
+}
+
+.navbar {
+  list-style: none;
+  margin-left: 12px;
+  padding: 0;
+  display: flex;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+}
+
+a:hover,
+.navitem--active {
+  color: #5289B5;
+}

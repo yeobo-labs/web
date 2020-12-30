@@ -7,7 +7,7 @@ import './layout-animation.css';
 
 const MediaTextSection = (props: MediaTextSectionProps) => {
     const { width } = useWindowSize();
-    const mediaSide = width && width <= 1240 ? 'left' : props.mediaSide;
+    const mediaSide = width && width <= 840 ? 'left' : props.mediaSide;
 
     if (!props.video && !props.image) {
         return <React.Fragment />;

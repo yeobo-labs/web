@@ -13,7 +13,7 @@ type NavigationHeaderProps = {
 const NavigationHeader = ({ children }: NavigationHeaderProps) => {
     return (
         <Router>
-            <div>
+            <>
                 <header>
                     <NavLink to="/">
                         <img src={logo} alt="Yeobo Labs" className="logo" />
@@ -36,9 +36,8 @@ const NavigationHeader = ({ children }: NavigationHeaderProps) => {
                         </li> */}
                     </ul>
                 </header>
-
                 {children}
-            </div>
+            </>
         </Router>
     )
 }
