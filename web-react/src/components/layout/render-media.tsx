@@ -30,8 +30,13 @@ export class Media extends React.Component<MediaTextSectionMediaProps, { reveale
     render() {
         const { video, image } = this.props;
         return (
-            <figure className={`mediaTextSection__contentImage__container will-reveal ${this.state.revealed ? 'revealing revealed' : ''}`} ref={this.ref}>
-                {this.props.video ? <video {...video} /> : (image ? <img {...image} alt={image.alt || ''} className="mediaTextSection__contentImage__image" /> : <div />)}
+            <figure className={`mediaTextSection__contentMedia__container will-reveal ${this.state.revealed ? 'revealing revealed' : ''}`} ref={this.ref}>
+                {video
+                    ? <video {...video} />
+                    : (image
+                        ? <img {...image} alt={image.alt || ''} className="mediaTextSection__contentMedia__image" />
+                        : <div />)
+                }
             </figure>
         );
     }

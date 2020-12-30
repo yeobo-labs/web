@@ -5,13 +5,13 @@
     min-height: 500px
 }
 
-.mediaTextSection__contentImage__container {
+.mediaTextSection__contentMedia__container {
     width: 50%;
     text-align: center;
     overflow: hidden;
 }
 
-.mediaTextSection__contentImage__image {
+.mediaTextSection__contentMedia__image {
     width: 540px;
     transform: scale(1.25);
 }
@@ -42,14 +42,19 @@
         align-items: flex-start;
     }
 
-    .mediaTextSection__contentImage__container {
-        width: auto;
-        margin: auto;
+    .mediaTextSection__contentMedia__container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mediaTextSection__contentMedia__container video {
+        width: 100%;
     }
 
     .mediaTextSection__contentText__container--right,
     .mediaTextSection__contentText__container--left {
         width: 75%;
         margin: auto;
+        padding: 0;
     }
 }
