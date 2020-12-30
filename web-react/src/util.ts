@@ -5,7 +5,6 @@ export const observeIntersect = (
     option: IntersectionObserverInit = { threshold: .3 }
 ) => {
     const observer = new IntersectionObserver(entries => {
-        console.log(entries)
         if (entries.every(x => x.isIntersecting)) {
             callback?.();
         }

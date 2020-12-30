@@ -4,7 +4,7 @@
 
 .bannerFigure {
     margin: 8px 0;
-    max-height: 400px;
+    max-height: 360px;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
@@ -13,7 +13,7 @@
 .bannerFigure img {
     width: 100%;
     position: relative;
-    transform: translateY(-40%);
+    object-fit: cover;
 }
 
 .bannerOverlay {
