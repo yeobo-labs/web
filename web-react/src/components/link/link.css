@@ -17,18 +17,25 @@
 }
 
 .portfolioLink__contentImage__container {
-    width: 200px;
+    width: 128px;
     text-align: center;
 }
 
-.portfolioLink__contentImage__image {
-    transform: scale(1.25);
-}
-
 .portfolioLink__contentText__container {
-    margin-left: 32px;
+    margin-left: 24px;
 }
 
 .portfolioLink__contentText__category {
     color: grey;
+}
+
+@media screen and (max-width: 480px) {
+    .portfolioLink__contentImage__container,
+    .portfolioLink__contentImage__container img {
+        width: 96px;
+    }
+
+    .portfolioLink__contentText__container {
+        margin-left: 16px;
+    }
 }

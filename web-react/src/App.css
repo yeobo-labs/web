@@ -18,3 +18,7 @@ main {
 h1 {
   color: #1F3541;
 }
+
+.App {
+  margin: 0 24px;
+}

@@ -1,21 +1,28 @@
 import React from 'react';
+import { useWindowSize } from '../../hooks/useWindowSize';
 import { Media } from './render-media';
+import { Content, MediaTextSectionProps } from './render-content';
 import './layout.css';
 import './layout-animation.css';
-import { Content, MediaTextSectionProps } from './render-content';
 
 const MediaTextSection = (props: MediaTextSectionProps) => {
+    const { width } = useWindowSize();
+    const mediaSide = width && width <= 840 ? 'left' : props.mediaSide;
+
+    if (!props.video && !props.image) {
+        return <React.Fragment />;
+    }
+
     const mediaContent = (<Media {...props} />);
     const textContent = (<Content {...props}/>);
 
-    const first = props.mediaSide === 'left' ? mediaContent : textContent;
-    const second = props.mediaSide === 'left' ? textContent : mediaContent;
+    const first = mediaSide === 'left' ? mediaContent : textContent;
+    const second = mediaSide === 'left' ? textContent : mediaContent;
 
     return (<div className="mediaTextSection__row">
         {first}
         {second}
     </div>);
 };
-
 
 export default MediaTextSection;

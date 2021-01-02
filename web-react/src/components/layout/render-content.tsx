@@ -7,6 +7,7 @@ export type MediaTextSectionProps = MediaTextSectionMediaProps & {
     children: React.ReactNode;
     mediaSide: 'left' | 'right';
 }
+
 export class Content extends React.Component<Omit<MediaTextSectionProps, 'image' | 'video'>> {
     observer?: IntersectionObserver;
     ref = React.createRef<any>();
@@ -38,4 +39,3 @@ export class Content extends React.Component<Omit<MediaTextSectionProps, 'image'
         this.observer?.disconnect();
     }
 }
-
