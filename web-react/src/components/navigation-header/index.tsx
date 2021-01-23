@@ -4,7 +4,7 @@ import {
     NavLink,
 } from 'react-router-dom';
 import logo from './images/logo.png';
-import './navigation-header.css';
+import styles from './navigation-header.module.css';
 
 type NavigationHeaderProps = {
     children: React.ReactNode
@@ -16,23 +16,23 @@ const NavigationHeader = ({ children }: NavigationHeaderProps) => {
             <>
                 <header>
                     <NavLink to="/">
-                        <img src={logo} alt="Yeobo Labs" className="logo" />
+                        <img src={logo} alt="Yeobo Labs" className={styles.logo} />
                     </NavLink>
-                    <ul className="navbar">
-                        <li className="navitem">
-                            <NavLink to="/productivity" activeClassName="navitem--active">Productivity</NavLink>
+                    <ul className={styles.navbar}>
+                        <li className={styles.navitem}>
+                            <NavLink to="/productivity" activeClassName={styles.navitemActive}>Productivity</NavLink>
                         </li>
-                        <li className="navitem">
-                            <NavLink to="/fun-games" activeClassName="navitem--active">Fun &amp; Games</NavLink>
+                        <li className={styles.navitem}>
+                            <NavLink to="/fun-games" activeClassName={styles.navitemActive}>Fun &amp; Games</NavLink>
                         </li>
-                        {/* <li className="navitem">
-                            <NavLink to="/portfolio" activeClassName="navitem--active">Portfolio</NavLink>
+                        {/* <li className={styles.navitem}>
+                            <NavLink to="/portfolio" activeClassName={styles.navitemActive}>Portfolio</NavLink>
                         </li> */}
-                        {/* <li className="navitem">
-                            <NavLink to="/blog" activeClassName="navitem--active">Blog</NavLink>
+                        {/* <li className={styles.navitem}>
+                            <NavLink to="/blog" activeClassName={styles.navitemActive}>Blog</NavLink>
                         </li> */}
-                        {/* <li className="navitem">
-                            <NavLink to="/about" activeClassName="navitem--active">About</NavLink>
+                        {/* <li className={styles.navitem}>
+                            <NavLink to="/about" activeClassName={styles.navitemActive}>About</NavLink>
                         </li> */}
                     </ul>
                 </header>
