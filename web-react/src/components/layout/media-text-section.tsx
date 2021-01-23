@@ -2,8 +2,7 @@ import React from 'react';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { Media } from './render-media';
 import { Content, MediaTextSectionProps } from './render-content';
-import './layout.css';
-import './layout-animation.css';
+import layoutStyles from './layout.module.css';
 
 const MediaTextSection = (props: MediaTextSectionProps) => {
     const { width } = useWindowSize();
@@ -19,7 +18,7 @@ const MediaTextSection = (props: MediaTextSectionProps) => {
     const first = mediaSide === 'left' ? mediaContent : textContent;
     const second = mediaSide === 'left' ? textContent : mediaContent;
 
-    return (<div className="mediaTextSection__row">
+    return (<div className={layoutStyles.mediaTextSectionRow}>
         {first}
         {second}
     </div>);
