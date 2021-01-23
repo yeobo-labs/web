@@ -16,8 +16,8 @@
     width: 100%;
 }
 
-.mediaTextSectionContentTextContainerRight,
-.mediaTextSectionContentTextContainerLeft {
+.mediaTextSectionContentTextContainerright,
+.mediaTextSectionContentTextContainerleft {
     width: 50%;
 }
 
@@ -43,8 +43,8 @@
         margin: 0;
     }
 
-    .mediaTextSectionContentTextContainer--right,
-    .mediaTextSectionContentTextContainer--left {
+    .mediaTextSectionContentTextContainerright,
+    .mediaTextSectionContentTextContainerleft {
         width: 75%;
         margin: auto;
         padding: 0;

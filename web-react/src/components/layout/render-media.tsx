@@ -1,5 +1,5 @@
-import classNames from "classnames";
-import React from "react";
+import classNames from 'classnames';
+import React from 'react';
 import { ImageProps } from '../../types/image';
 import { VideoProps } from '../../types/video';
 import { observeIntersect } from "../../util";

@@ -16,7 +16,7 @@ export class Content extends React.Component<Omit<MediaTextSectionProps, 'image'
     ref = React.createRef<any>();
     
     render() {
-        const classes = classNames(layoutStyles[`mediaTextSectionContentTextContainer--${this.props.mediaSide}`],
+        const classes = classNames(layoutStyles[`mediaTextSectionContentTextContainer${this.props.mediaSide}`],
             animationStyles.willReveal);
         return (
             <div className={classes} ref={this.ref}>
