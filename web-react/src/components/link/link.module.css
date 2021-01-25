@@ -1,0 +1,41 @@
+.portfolioLinkRow:hover {
+    color: black !important;
+}
+
+.portfolioLinkRow:hover h3 {
+    color: #5289B5;
+}
+
+.portfolioLinkContainer {
+    margin: 48px 0;
+}
+
+.portfolioLinkRow {
+    display: flex;
+    align-items: flex-start;
+    pointer: cursor;
+}
+
+.portfolioLinkContentImageContainer {
+    width: 128px;
+    text-align: center;
+}
+
+.portfolioLinkContentTextContainer {
+    margin-left: 24px;
+}
+
+.portfolioLinkContentTextCategory {
+    color: grey;
+}
+
+@media screen and (max-width: 480px) {
+    .portfolioLinkContentImageContainer,
+    .portfolioLinkContentImageContainer img {
+        width: 96px;
+    }
+
+    .portfolioLinkContentTextContainer {
+        margin-left: 16px;
+    }
+}

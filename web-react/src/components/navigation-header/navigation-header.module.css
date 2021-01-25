@@ -25,6 +25,6 @@ header {
 }
 
 a:hover,
-.navitem--active {
+.navitemActive {
   color: #5289B5;
 }

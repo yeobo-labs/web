@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './breadcrumbs.css';
+import styles from './breadcrumbs.module.css';
 
 type BreadCrumbItemProps = {
     link: string;
@@ -13,10 +13,10 @@ type BreadcrumbsProps = {
 };
 
 const Breadcrumbs = ({ items }: BreadcrumbsProps) => (<div>
-    <ul className="breadcrumbs">
-        {items.map((it, index) => (<li key={`breadcrumb-${index}`} className="breadcrumbItem">
+    <ul className={styles.breadcrumbs}>
+        {items.map((it, index) => (<li key={`breadcrumb-${index}`} className={styles.breadcrumbItem}>
             {it.isActive
-                ? <span className="breadcrumbItem--active">{it.label}</span>
+                ? <span className={styles.breadcrumbItemActive}>{it.label}</span>
                 : <Link to={it.link}>{it.label}</Link>}
         </li>))}
     </ul>

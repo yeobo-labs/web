@@ -1,17 +1,17 @@
 import React from 'react';
 import { ImageProps } from '../../types/image';
-import './banner.css';
+import styles from './banner.module.css';
 
 type BannerProps = {
     image: ImageProps;
 };
 
 const Banner = ({image}: BannerProps) => (
-    <div className="bannerContainer">
-        <figure className="bannerFigure">
+    <div className={styles.bannerContainer}>
+        <figure className={styles.bannerFigure}>
             <img {...image} alt={image.alt || ''} />
         </figure>
-        <div className="bannerOverlay" />
+        <div className={styles.bannerOverlay} />
     </div>
 );
 

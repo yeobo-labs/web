@@ -1,50 +1,50 @@
-.mediaTextSection__row {
+.mediaTextSectionRow {
     margin: 0 auto;
     display: flex;
     align-items: center;
     min-height: 500px
 }
 
-.mediaTextSection__contentMedia__container {
+.mediaTextSectionContentMediaContainer {
     width: 50%;
     text-align: center;
     overflow: hidden;
 }
 
-.mediaTextSection__contentMedia__container img,
-.mediaTextSection__contentMedia__container video {
+.mediaTextSectionContentMediaContainer img,
+.mediaTextSectionContentMediaContainer video {
     width: 100%;
 }
 
-.mediaTextSection__contentText__container--right,
-.mediaTextSection__contentText__container--left {
+.mediaTextSectionContentTextContainerright,
+.mediaTextSectionContentTextContainerleft {
     width: 50%;
 }
 
-.mediaTextSection__contentText__heading {
+.mediaTextSectionContentTextHeading {
     color: #1F3541;
     padding-bottom: 12px;
     border-bottom: solid 1px lightgray;
 }
 
-.mediaTextSection__contentText__content {
+.mediaTextSectionContentTextContent {
     font-size: medium;
     margin-top: 18px;
 }
 
 @media screen and (max-width: 840px) {
-    .mediaTextSection__row {
+    .mediaTextSectionRow {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .mediaTextSection__contentMedia__container {
+    .mediaTextSectionContentMediaContainer {
         width: 100%;
         margin: 0;
     }
 
-    .mediaTextSection__contentText__container--right,
-    .mediaTextSection__contentText__container--left {
+    .mediaTextSectionContentTextContainerright,
+    .mediaTextSectionContentTextContainerleft {
         width: 75%;
         margin: auto;
         padding: 0;
